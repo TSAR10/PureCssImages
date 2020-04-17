@@ -15,29 +15,29 @@ body{
 	width: 50%;
 	height:50%;
 	border-radius: 48% 55% 35% 41% / 71% 74% 39% 38%;
-	background-color: rgba(169,82,46,1);
+	background-color: rgba(95,28,0,1);
 	top:50%;
 	left:50%;
 	transform: translateX(-50%)translateY(-50%);
 }
 .ear_left{
 	position:absolute;
-	width:20%;
-	height:20%;
+	width:25%;
+	height:25%;
 	border-radius:50%;
 	background-color: rgba(95,28,0,1);
-	top:30%;
-	left:30%;
+	top:30.5%;
+	left:31%;
 	transform: translateX(-45%)translateY(-45%);
 }
 .ear_right{
 	position:absolute;
-	width:20%;
-	height:20%;
+	width:25%;
+	height:25%;
 	border-radius:50%;
 	background-color: rgba(95,28,0,1);
-	top:30%;
-	right:30%;
+	top:30.5%;
+	right:31%;
 	transform: translateX(45%)translateY(-45%);
 }
 .inner{
@@ -46,15 +46,15 @@ body{
 	height:75%;
 	top:50%;
 	left:50%;
-	transform:translateX(-50%)translateY(-50%);
+	transform:translateX(-48%)translateY(-48%);
 	border-radius: 50%;
-	background-color: rgba(169,82,46,1);
+	background-color: rgb(209,150,84);
 }
 .eye_left{
 	position: absolute;
 	background-color: black;
-	width:8%;
-	height:8%;
+	width:10%;
+	height:10%;
 	border-radius: 50%;
 	top:36%;
 	left:24%;
@@ -62,11 +62,11 @@ body{
 .eye_right{
 	position: absolute;
 	background-color: black;
-	width:8%;
-	height:8%;
+	width:10%;
+	height:10%;
 	border-radius: 50%;
 	top:36%;
-	right:28%;
+	right:26%;
 }
 .eye_inner{
 	position: absolute;
@@ -86,7 +86,7 @@ body{
 	clip-path: polygon(0% 33% , 50% 0% , 100% 33% , 100% 66% , 50% 100% , 0% 66%);
 	border-radius: 50%;
 	top:62%;
-	left:27.8%;
+	left:27%;
 }
 .mouth_border{
 	z-index:1;
@@ -119,7 +119,7 @@ body{
 	border-radius: 50%;
 	clip-path: polygon(0% 33% , 50% 0% , 50% 100% , 0% 66%);
 	top:62%;
-	right:30.4%;
+	right:30.8%;
 }
 .mouth3{
 	z-index:-1;
@@ -137,7 +137,16 @@ body{
 	width:23%;
 	height:20%;
 	background-color: black;
-	border-radius: 45%;
+	border-radius: 40%;
 	top:56%;
 	left:37%;
+}
+.hair{
+	position: absolute;
+	background-color: rgba(95,28,0,1);
+	width:12%;
+	height:5%;
+	clip-path: polygon(0% 100% , 33% 0% , 28% 50% , 70% 15% , 60% 70% , 100% 20% , 90% 100%);
+	top:23%;
+	left:43%;
 }
