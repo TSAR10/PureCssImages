@@ -1,0 +1,163 @@
+body,html{
+	background-color: whitesmoke;
+	width:100%;
+	height:100%;
+}
+.box{
+	position: relative;
+	width:600px;
+	height: 500px;
+	margin:auto;
+	margin-top:5%;
+}
+.frame{
+	position: absolute;
+	width: 100%;
+	height:20%;
+	background-color: lightgrey;
+	border-radius: 2% 2% 2% 2% / 10% 10% 10% 10%;
+}
+.cm{
+	left:5%;
+	position: absolute;
+	width:10%;
+	height:30%;
+}
+.cm::before{
+	position: absolute;
+	content:'0';
+	top:90%;
+	left:16%;
+}
+.mm{
+	position: absolute;
+	height:62%;
+	width:5%;
+	background-color: black;
+}
+.mm:nth-child(1){
+	left:20%;
+	height:95%;
+}
+.mm:nth-child(2){
+	left:28%;
+}
+.mm:nth-child(3){
+	left:36%;
+}
+.mm:nth-child(4){
+	left:44%;
+}
+.mm:nth-child(5){
+	left:52%;
+}
+.mm:nth-child(6){
+	left:60%;
+	height:80%;
+}
+.mm:nth-child(7){
+	left:68%;
+}
+.mm:nth-child(8){
+	left:76%;
+}
+.mm:nth-child(9){
+	left:84%;
+}
+.mm:nth-child(10){
+	left:92%;
+}
+.mm:nth-child(11){
+	left:100%;
+	height:95%;
+}
+.cm:nth-child(2){
+	left:13%;
+}
+.cm:nth-child(2)::before{
+	position: absolute;
+	content:'1';
+	top:90%;
+	left:16%;
+}
+.cm:nth-child(3){
+	left:21%;
+}
+.cm:nth-child(3)::before{
+	position: absolute;
+	content:'2';
+	top:90%;
+	left:16%;
+}
+.cm:nth-child(4){
+	left:29%;
+}
+.cm:nth-child(4)::before{
+	position: absolute;
+	content:'3';
+	top:90%;
+	left:16%;
+}
+.cm:nth-child(5){
+	left:37%;
+}
+.cm:nth-child(5)::before{
+	position: absolute;
+	content:'4';
+	top:90%;
+	left:16%;
+}
+.cm:nth-child(6){
+	left:45%;
+}
+.cm:nth-child(6)::before{
+	position: absolute;
+	content:'5';
+	top:90%;
+	left:16%;
+}
+.cm:nth-child(7){
+	left:53%;
+}
+.cm:nth-child(7)::before{
+	position: absolute;
+	content:'6';
+	top:90%;
+	left:16%;
+}
+.cm:nth-child(8){
+	left:61%;
+}
+.cm:nth-child(8)::before{
+	position: absolute;
+	content:'7';
+	top:90%;
+	left:16%;
+}
+.cm:nth-child(9){
+	left:69%;
+}
+.cm:nth-child(9)::before{
+	position: absolute;
+	content:'8';
+	top:90%;
+	left:16%;
+}
+.cm:nth-child(10){
+	left:77%;
+}
+.cm:nth-child(10)::before{
+	position: absolute;
+	content:'9';
+	top:90%;
+	left:16%;
+}
+.cm:nth-child(11){
+	left:85%;
+}
+.cm:nth-child(11)::before{
+	position: absolute;
+	content:'10';
+	top:90%;
+	left:16%;
+}
