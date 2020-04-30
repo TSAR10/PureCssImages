@@ -1,0 +1,144 @@
+html,body{
+	background-color: black;
+}
+.box{
+	position: relative;
+	width:500px;
+	height:500px;
+	margin: auto;
+	margin-top: 10%;
+}
+.circle{
+	position: absolute;
+	width:50%;
+	height:50%;
+	border-radius: 50%;
+	background-color: transparent;
+	top:50%;
+	left:50%;
+	transform: translateX(-50%)translateY(-50%);
+	animation: beautiful infinite 1s linear;
+}
+@keyframes beautiful{
+	from{
+		box-shadow: 0px 5px 2px 5px rgba(227, 9, 223, 1);
+	}
+	25%{
+		box-shadow: 5px 5px 2px 5px rgba(227, 9, 223, 1);
+	}
+	50%{
+		box-shadow: 0px -5px 2px 5px rgba(191, 9, 227, 1);
+	}
+	75%{
+		box-shadow: -5px -5px 2px 5px rgba(187, 9, 227, 1);
+	}
+	to{
+		box-shadow: 0px 5px 5px 2px rgba(180, 9, 227, 1);
+	}
+}
+.indicate{
+	position: absolute;
+	width:2%;
+	height:7%;
+	background-color: white;
+}
+.indicate:nth-child(1){
+	right:25%;
+	top:10%;
+	transform: rotate(30deg);
+}
+.indicate:nth-child(2){
+	right:10%;
+	top:25%;
+	transform: rotate(60deg);
+}
+.indicate:nth-child(3){
+	top:45%;
+	right:5%;
+	transform: rotate(90deg);
+}
+.indicate:nth-child(4){
+	bottom:25%;
+	right:10%;
+	transform: rotate(-60deg);
+}
+.indicate:nth-child(5){
+	right:25%;
+	bottom:10%;
+	transform: rotate(-30deg);
+}
+.indicate:nth-child(6){
+	bottom:5%;
+	left:50%;
+}
+.indicate:nth-child(7){
+	left:25%;
+	bottom:10%;
+	transform: rotate(30deg);
+}
+.indicate:nth-child(8){
+	bottom:25%;
+	left:10%;
+	transform: rotate(60deg);
+}
+.indicate:nth-child(9){
+	top:45%;
+	left:5%;
+	transform: rotate(90deg);
+}
+.indicate:nth-child(10){
+	left:10%;
+	top:25%;
+	transform: rotate(-60deg);
+}
+.indicate:nth-child(11){
+	left:25%;
+	top:10%;
+	transform: rotate(-30deg);
+}
+.indicate:nth-child(12){
+	left:50%;
+	top:5%;
+}
+.minute_hand{
+	width:1%;
+	height:35%;
+	top:46%;
+	left:50.5%;
+	position: absolute;
+	background-color: white;
+	transform-origin: 50% 10%;
+	animation: circularm infinite 3600s linear;
+}
+@keyframes circularm{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
+.second_hand{
+	width:0.5%;
+	height:40%;
+	top:46%;
+	left:50.6%;
+	position: absolute;
+	background-color: white;
+	transform-origin: 50% 10%;
+	animation: circular infinite 60s linear;
+}
+@keyframes circular{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
+.hour_hand{
+	width:1.5%;
+	height:30%;
+	top:46%;
+	left:50.2%;
+	position: absolute;
+	background-color: white;
+	transform-origin: 50% 10%;
+	animation: circularh infinite 43200s linear;
+}
+@keyframes circularh{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
