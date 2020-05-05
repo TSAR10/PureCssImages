@@ -1,0 +1,170 @@
+body,html{
+	background-color: whitesmoke;
+}
+.box{
+	position:relative;
+	width:500px;
+	height:500px;
+	margin:auto;
+	margin-top:5%;
+	border:2px solid black;
+}
+.pin{
+	position: absolute;
+	top:20%;
+	left:40%;
+	z-index: 1;
+	width:8%;
+	height:10%;
+	fill:transparent;
+	stroke: black;
+	stroke-width:6px;
+	stroke-dasharray: 87;
+	transform: rotateX(180deg);
+}
+.pin:nth-child(2){
+	left:50%;
+}
+.pin:nth-child(3){
+	left:60%;
+}
+.pin:nth-child(4){
+	left:70%;
+}
+.pad{
+	position: absolute;
+	top:24.5%;
+	left:35%;
+	width:50%;
+	height:70%;
+	background-color: #ccb189;
+	border:4px solid black;
+	border-radius: 5% 5% 5% 5%/3% 3% 3% 3%;
+}
+.page{
+	position: absolute;
+	top:-1%;
+	left:-1%;
+	width:95%;
+	height:97%;
+	background-color: #f3d576;
+	border:4px solid black;
+	border-radius: 5% 5% 5% 5%/3% 3% 3% 3%;
+}
+.hole{
+	position: absolute;
+	width:4%;
+	height:4%;
+	border-radius:50%;
+	background-color:white;
+	border:4px solid black;
+	left:12.3%;
+	top:2.5%;
+}
+.hole:nth-child(2){
+	left:32.3%;
+}
+.hole:nth-child(3){
+	left:52.3%;
+}
+.hole:nth-child(4){
+	left:72.3%;
+}
+.write{
+	position: absolute;
+	width:70%;
+	border:4px solid rgb(37,37,37);
+	top:20%;
+	left:10%;
+	position:absolute;
+	border-radius:2% 2% 2% 2%/25% 25% 25% 25%;
+}
+.write:nth-child(2){
+	top:35%;
+}
+.write:nth-child(3){
+	top:50%;
+}
+.write:nth-child(4){
+	top:65%;
+}
+.write:nth-child(5){
+	top:80%;
+	animation: complete 4s linear  0s alternate;
+}
+@keyframes complete{
+	0% {
+		width:0%;
+	}
+	100%{
+		width: 70%;
+	}
+}
+.pen{
+	position: absolute;
+	width:8%;
+	height:30%;
+	background-color: black; 
+	top:42.9%;
+	left:20%;
+	transform-origin: 100% 50%;
+	transform: rotate(-15deg);
+}
+.pen::before{
+	position: absolute;
+	content: '';
+	background-color: black;
+	width:100%;
+	height:15%;
+	top:-18%;
+	border-radius: 40% 40% 0% 0%/40% 40% 0% 0%;
+}
+.pen::after{
+	position: absolute;
+	content: '';
+	border-top: 11px solid black;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	bottom: -28%;
+	left:50%;
+	transform:translateX(-50%);
+}
+.pen{
+	animation: 
+		write 4s linear  0s alternate,
+		moves 4s linear  0s alternate; 
+}
+@keyframes write{
+	0%{
+		left:31%;
+	}
+	100%{
+		left:74%;
+	}
+}
+@keyframes moves{
+	0%{
+		transform: rotate(-15deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+.sharp{
+	position: absolute;
+	background-color: black;
+	width: 100%;
+	height:30%;
+	top:99%;
+	clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+.inside{
+	position: absolute;
+	background-color: tan;
+	width: 90%;
+	height:95%;
+	top:50%;
+	left:50%;
+	transform: translateX(-50%)translateY(-50%);
+	clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
