@@ -1,0 +1,241 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+html, body{
+	width:100%;
+	height:100%;
+	background-color: #fff6ef;
+}
+.box{
+	top:10%;
+	margin: auto;
+	position: relative;
+	width:500px;
+	height:500px;
+	border:1px solid black;
+}
+.plate{
+	z-index: 1;
+	position: absolute;
+	width:30%;
+	height:9%;
+	background-color: #1e0f38;
+	top:55%;
+	left:35%;
+	clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+	border-bottom-left-radius:40% 40%;
+	border-bottom-right-radius:40% 40%;
+	color:white;
+}
+.design{
+	padding: 0 5% 0 5%;
+	display: flex;
+	z-index: 1;
+	position: absolute;
+	width:100%;
+	height:30%;
+	background-color: #1e0f38;
+	top:50%;
+	left:50%;
+	transform: translateX(-50%)translateY(-50%);
+	clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+	border-bottom-left-radius:40% 40%;
+	border-bottom-right-radius:40% 40%;
+	color:white;
+	align-items: center;
+	justify-content: space-around;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;	
+}
+.design > div{
+	width:10%;
+	height:70%;
+	background-color: white;
+	border-radius: 50%;
+}
+.boundary > div{
+	z-index: 1;
+	top:54%;
+	left:46.5%;
+	position: absolute;
+	width:7%;
+	height:3.2%;
+	border-radius: 50%;
+	background-color: #e6bf98;
+}
+.boundary > div:nth-child(2){
+	width:6%;
+	height:3%;
+	border-radius: 50%;
+	top:54%;
+	left:53.4%;
+	transform-origin: 0% 50%;
+	transform: rotate(-2deg);
+}
+.boundary > div:nth-child(3){
+	width:6%;
+	height:3%;
+	border-radius: 50%;
+	top:54%;
+	left:40.6%;
+	transform-origin: 100% 50%;
+	transform: rotate(2deg);
+}
+.boundary > div:nth-child(4){
+	width:5%;
+	height:2.5%;
+	border-radius: 50%;
+	top:54%;
+	left:59.2%;
+	transform-origin: 0% 50%;
+	transform: rotate(-4.5deg);
+}
+.boundary > div:nth-child(5){
+	width:5%;
+	height:2.5%;
+	border-radius: 50%;
+	top:54%;
+	left:35.7%;
+	transform-origin: 100% 50%;
+	transform: rotate(4.5deg);
+}
+.boundary > div:nth-child(6){
+	width:2.5%;
+	height:1.5%;
+	border-radius: 50%;
+	top:54%;
+	left:63.8%;
+	transform-origin: 0% 50%;
+	transform: rotate(-10deg);
+}
+.boundary > div:nth-child(7){
+	width:2.5%;
+	height:1.5%;
+	border-radius: 50%;
+	top:54%;
+	left:33.8%;
+	transform-origin: 100% 50%;
+	transform: rotate(10deg);
+}
+.inside{
+	overflow: hidden;
+	z-index: 0;
+	top:51%;
+	left:36.4%;
+	position: absolute;
+	background-color: #a50007;
+	width:27%;
+	height:7%;
+	border-top-left-radius: 50% 50%;
+	border-top-right-radius: 50% 50%;
+}
+.strips{
+	border:0.2px solid black;
+	top:-10%;
+	left:5%;
+	position: absolute;
+	background-color: #f0e3be;
+	width:5%;
+	height:100%;
+	transform-origin:0% 100%;  
+	transform: rotate(15deg);
+}
+.strips:nth-child(7){
+	z-index: 1;
+	position: absolute;
+	left:19%;
+	top:-15%;
+	transform-origin:50% 50%;
+	transform: rotate(-50deg);	
+}
+.strips:nth-child(2){
+	z-index: 2;
+	left:20%;
+	top:-30%;
+	transform: rotate(18deg);	
+}
+.strips:nth-child(8){
+	z-index: -1;
+	position: absolute;
+	left:32%;
+	top:-30%;
+	transform-origin:50% 50%;
+	transform: rotate(-50deg);	
+}
+.strips:nth-child(3){
+	left:35%;
+	top:-30%;
+	transform: rotate(20deg);	
+}
+.strips:nth-child(9){
+	z-index: 0;
+	position: absolute;
+	left:50%;
+	top:-22%;
+	transform-origin:50% 50%;
+	transform: rotate(-40deg);	
+}
+.strips:nth-child(4){
+	z-index: 1;
+	left:50%;
+	top:-30%;
+	transform: rotate(22deg);	
+}
+.strips:nth-child(10){
+	z-index: 2;
+	position: absolute;
+	left:65%;
+	top:-22%;
+	transform-origin:50% 50%;
+	transform: rotate(-45deg);	
+}
+.strips:nth-child(5){
+	left:65%;
+	top:-30%;
+	transform: rotate(24deg);	
+}
+.strips:nth-child(11){
+	z-index: -1;
+	position: absolute;
+	left:80%;
+	top:-22%;
+	transform-origin:50% 50%;
+	transform: rotate(-40deg);	
+}
+.strips:nth-child(6){
+	z-index: -2;
+	left:80%;
+	top:-30%;
+	transform: rotate(27deg);	
+}
+.fruit{
+	border:0.5px solid black;
+	top:49%;
+	left:48.1%;
+	position: absolute;
+	width:3%;
+	height:2.5%;
+	border-radius: 50%;
+	background-color: #be0e0e;
+}
+.stem{
+	position: absolute;
+	border-left:1px solid black;
+	border-top:1px solid black;
+	border-radius:100% 0% 0% 0% / 100% 0% 0% 0% ;
+	width:3%;
+	height:5%;
+	left:49.5%;
+	top:45%;
+}
+.joint{
+	top:8%;
+	left:30%;
+	position: absolute;
+	width:50%;
+	height:50%;
+	border-radius: 50%;
+	border-bottom: 1px solid black;
+}
