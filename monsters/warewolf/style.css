@@ -1,0 +1,231 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html, body{
+    width:100%;
+    height:100%;
+    background-color: #0b0b31;
+}
+.box{
+    position: relative;
+    width:500px;
+    height:500px;
+    border:1px solid #0b0b31;
+    margin:auto;
+    top:10%;
+}
+.moon{
+    position: absolute;
+    border-radius:50%;
+    background-color: rgb(249, 251, 251);
+    width:60%;
+    height:60%;
+    left:50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 10px 5px whitesmoke;
+}
+.spots:nth-child(1){
+    position: absolute;
+    width:20%;
+    height:20%;
+    background-color: rgb(228, 225, 225);
+    border-radius: 50%;
+    top:25%;
+    left:10%;
+}
+.spots:nth-child(2){
+    position: absolute;
+    width:25%;
+    height:25%;
+    background-color: rgb(228, 225, 225);
+    border-radius: 50%;
+    top:30%;
+    left:40%;
+}
+.spots:nth-child(3){
+    position: absolute;
+    width:10%;
+    height:10%;
+    background-color: rgb(228, 225, 225);
+    border-radius: 50%;
+    top:15%;
+    left:77%;
+}
+.spots:nth-child(4){
+    position: absolute;
+    width:5%;
+    height:5%;
+    background-color: rgb(228, 225, 225);
+    border-radius: 50%;
+    top:42%;
+    left:8%;
+}
+.spots:nth-child(5){
+    position: absolute;
+    width:15%;
+    height:15%;
+    background-color: rgb(228, 225, 225);
+    border-radius: 50%;
+    top:73%;
+    left:18%;
+}
+.wolf{
+    position: absolute;
+    width:30%;
+    height:30%;
+    min-width: 149.391px;
+    min-height: 149.391px;
+    max-width: 149.391px;
+    max-height: 149.391px;
+    top:35%;
+    left:20%;
+}
+.fill{
+    z-index: 10;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    top:22%;
+    left:64%;
+    background-color: black;
+}
+.lowerjaw{
+    top:16%;
+    left:75%;
+    position: absolute;
+    background-color: black;
+    width:10%;
+    height:7%;
+    border-radius: 0% 0% 50% 56% / 0% 0% 100% 100%;
+    transform: rotate(-60deg);
+}
+.upperjaw{
+    top:12%;
+    left:65%;
+    position: absolute;
+    background-color: black;
+    width:15%;
+    height:10%;
+    border-radius:81% 19% 20% 0% / 100% 55% 45% 0%; 
+    transform: rotate(130deg);
+}
+.crest1{
+    position: absolute;
+    top:11.7%;
+    left:60%;
+    border-radius: 50%;
+    width:15%;
+    height:10%;
+    box-shadow: inset 0px -8px 0px 0px black;
+    transform: rotate(-37deg);
+}
+.rectangular{
+    position: absolute;
+    background-color: black;
+    width:12%;
+    height:10%;
+    border-radius: 30% 30% 30% 30% / 30% 30% 30% 30%;
+    transform: rotate(-37deg);
+    top:20.7%;
+    left:54%;
+}
+.crest2{
+    top:22%;
+    left:75%;
+    position: absolute;
+    box-shadow: -10px 0px 0px 0px black;
+    border-radius: 50%;
+    width:15%;
+    height:24%;
+    transform: rotate(15deg);
+}
+.ear{
+    width:15%;
+    height:8%;
+    position: absolute;
+    background-color: black;
+    border-radius: 100% 0% 0% 100% / 35% 100% 0% 64%;
+    top:26%;
+    left:40.5%;
+    transform: rotate(-15deg);
+}
+.crest3{
+    top:20%;
+    left:69%;
+    position: absolute;
+    box-shadow: -10px 0px 0px 0px black;
+    border-radius: 50%;
+    width:28%;
+    height:28%;
+    transform: rotate(15deg);
+}
+.body{
+    width:25%;
+    height:40%;
+    position: absolute;
+    border-radius: 40% 40% 40% 40% / 35% 35% 40% 40% ;
+    background-color: black;
+    top:25%;
+    left:43%;
+    transform: rotate(30deg);
+}
+.crest4{
+    position: absolute;
+    width:15%;
+    height:30%;
+    border-radius: 50%;
+    box-shadow: -5px 0px 0px 0px black;
+    transform: rotate(15deg);
+    top:34%;
+    left:42.5%;
+}
+.lowerbody2{
+    position: absolute;
+    width:25%;
+    height:45%;
+    background-color: black;
+    border-radius: 40%;
+    top:50%;
+    left:28%;
+    transform: rotate(20deg);
+}
+.lowerbody{
+    position: absolute;
+    width:25%;
+    height:40%;
+    background-color: black;
+    border-radius: 40%;
+    top:40%;
+    left:34%;
+    transform: rotate(30deg);
+}
+.neck{
+    position: absolute;
+    border-radius: 50%;
+    width:30%;
+    height:45%;
+    box-shadow: 10px 0px 0px 0px black;
+    top:29%;
+    left:32%;
+    transform: rotate(40deg);
+}
+.legs{
+    position: absolute;
+    width:8%;
+    height:0%;
+    border-top: 40px solid black;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    top:65%;
+    left:55%;
+    transform: rotate(-5deg);
+}
+.sitting{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: black;
+    clip-path: polygon(0% 100%, 5% 95%, 10% 92%, 20% 90%,  40% 79%, 50% 80%, 53% 78%, 55% 85%, 60% 90%, 75% 87%, 95% 95%, 100% 100%, 0% 100%);
+}
